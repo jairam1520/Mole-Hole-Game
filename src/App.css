@@ -1,0 +1,30 @@
+
+.grid{
+  width: 768px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+
+.centered {
+  width: 200px; /* Set the width of your div */
+  margin: 0 auto; /* This will center the div horizontally */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.reset-button {
+  padding: 8px 16px; /* Adjust padding as needed */
+  background-color: #ffffff; /* Button background color */
+  border: 1px solid #cccccc; /* Button border */
+  border-radius: 4px; /* Button border radius */
+  font-size: 14px; /* Button font size */
+  color: #333333; /* Button text color */
+  cursor: pointer; /* Show cursor as pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+  margin-top: 5px;
+}
+
+.reset-button:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+  color: #000000; /* Text color on hover */
+}
