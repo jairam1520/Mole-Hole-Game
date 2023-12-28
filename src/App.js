@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import holeImg from './assets/hole.png';
 import moleImg from './assets/mole.png'
 import './App.css';
@@ -22,7 +21,7 @@ function App() {
     },1200);
 
     return () => clearInterval(interval);
-  },[hole])
+  },[hole,activeHole])
 
   function getRandom(){
     return Math.floor(Math.random() * 9);
@@ -37,7 +36,7 @@ function App() {
       <div className="grid">
         
           {hole.map((item,idx)=>{
-            return <img key={idx} onClick={()=>{
+            return <img alt="mole-hole" key={idx} onClick={()=>{
               item && setScore((prev)=>prev+1)
             }} src={item ? moleImg:holeImg}/>
           })}
